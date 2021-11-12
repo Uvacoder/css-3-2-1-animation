@@ -7,11 +7,11 @@ body {
 }
 
 :root {
-  --text-large: 5rem;
-  --text-small: 1rem;
+  --text-large: 8rem;
+  --text-small: 4rem;
   --opacity-max: 1;
-  --opacity-min: 0.1;
-  --shadow-offset: 2px;
+  --opacity-min: 0;
+  --shadow-offset: 6px;
   --shadow-colour: #000066;
 }
 
@@ -36,7 +36,7 @@ body {
     1px -1px 0 var(--shadow-colour), 
     -1px 1px 0 var(--shadow-colour);
   content: "3";
-  animation: loop 4s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  animation: loop 5s cubic-bezier(0, 0.68, 0.46, 1.18) infinite;
 }
 
 @keyframes loop {
@@ -44,54 +44,45 @@ body {
     content: "3";
     font-size: var(--text-small);
     opacity: var(--opacity-min);
-  --shadow-offset: 2px;
   }
   11% {
     content: "3";
     font-size: var(--text-large);
     opacity: var(--opacity-max);
-  --shadow-offset: 6px;
   }
   22% {
     content: "3";
     font-size: var(--text-small);
     opacity: var(--opacity-min);
-  --shadow-offset: 2px;
   }
   33% { 
     content: "2";
     font-size: var(--text-small);
     opacity: var(--opacity-min);
-  --shadow-offset: 2px;
   }
   44% {
     content: "2";
     font-size: var(--text-large);
     opacity: var(--opacity-max);
-  --shadow-offset: 6px;
   }
   55% {
     content: "2";
     font-size: var(--text-small);
     opacity: var(--opacity-min);
-  --shadow-offset: 2px;
   }
   66% { 
     content: "1";
     font-size: var(--text-small);
     opacity: var(--opacity-min);
-  --shadow-offset: 2px;
   }
   77% {
     content: "1";
     font-size: var(--text-large);
     opacity: var(--opacity-max);
-  --shadow-offset: 6px;
   }
   88% {
     content: "1";
     font-size: var(--text-small);
     opacity: var(--opacity-min);
-  --shadow-offset: 2px;
   }
 }
