@@ -13,6 +13,7 @@ body {
   --opacity-min: 0;
   --shadow-offset: 6px;
   --shadow-colour: #000066;
+  --fill-colour: coral;
 }
 
 .container {
@@ -25,7 +26,7 @@ body {
 .num::after {
   font-size: var(--text-small);
   opacity: var(--opacity-min);
-  color: coral;
+  color: var(--fill-colour);
   text-shadow: 
     var(--shadow-offset) 0 0 var(--shadow-colour), 
     -2px 0 0 var(--shadow-colour), 
